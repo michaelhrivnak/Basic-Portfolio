@@ -21,12 +21,24 @@
             <div class="content-body">
                 <h2>Contact</h2>
                 <hr>
-                
+                <form>
+                    <div class="input"><div class="input-title">Name</div>
+                        <input type="text" name="name" value="John Doe" onfocus="this.value=''">
+                    </div>
+                    <div class="input"><div class="input-title">Email</div>
+                        <input type="email" name="email" value="example@domain.com" onfocus="this.value=''">
+                    </div>
+                    <div class="input"><div class="input-title">Message</div>
+                        <textarea id="messageBox" type="text" name="message" onfocus="this.value=''"></textarea>
+                    </div>
+                    <input type="submit" class="btn submit" value="Submit">                       
+                </form>
+                </div>                
             </div>
         </div>
         <!--Footer-->
         <div class="sticky-footer">
-            <small>Copyright &copy; Michael Hrivnak 2019</small>
+            <small>Copyright &copy; 2019 Michael Hrivnak</small>
         </div>
     </body>
 </html>

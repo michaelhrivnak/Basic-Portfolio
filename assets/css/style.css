@@ -2,14 +2,16 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     background-color: lightgrey;
+    color: #777777;
+    background-image: url("../images/confectionary.png");
 }
 .control-width{
     margin:auto;
     max-width:960px;    
 }
 .header-section{
-    background-color: #f1f1f1;
-    border-bottom: 1px solid rgb(160, 160, 160);
+    background-color:#ffffff;
+    border-bottom: 1px solid #cccccc;
     margin-bottom:10px;
 }
 .header{
@@ -19,8 +21,8 @@ body{
 }
 .name{
     font-size: 20px;    
-    background-color:teal;
-    color: white;
+    background-color:#4aaaa5;
+    color: #ffffff;
     font-weight: bold;
     padding: 20px 20px;
     white-space: nowrap;
@@ -37,22 +39,24 @@ li{
     margin-left: 5px;
 }
 li > a{
-    color: rgb(136, 135, 135);
+    color: #777777;
     text-decoration: none;    
     padding: 10px 20px;
     text-align: center;
 }
 li:hover{
-    background-color: teal;
+    background-color: #4aaaa5;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 li:hover > a {
-    color: #f1f1f1;
+    color: #ffffff;
 }
 .content-body{
     padding:15px;
     text-align: left;    
-    background-color: #f1f1f1;
+    background-color: #ffffff;
     margin-top:20px;
+    border: 1px solid #dddddd;
 }
 p{
     padding: 5px;
@@ -66,7 +70,8 @@ hr{
     border: 1px solid darkgrey;
 }
 h2{
-    color: teal;
+    color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .sticky-footer{
     position: absolute;
@@ -74,14 +79,45 @@ h2{
     text-align:center;
     padding:10px 0;    
     height:20px;
-    border-top: 5px solid teal;    
-    background-color: rgb(102, 100, 100);
-    color:white;
-    top: calc(100% - 45px);
+    border-top: 8px solid #4aaaa5;    
+    background-color:#666666;
+    color:#ffffff;
+    top: calc(100% - 48px);
 }
 .right{
     float: right;
 }
 .left{
     float: left;
+}
+.input{    
+    margin-bottom: 10px;
+}
+.input-title{
+    margin-bottom:5px;
+}
+input{
+    color: #777777;
+    width:100%;
+    padding: 5px 0 5px 5px;
+}
+#messageBox{
+    height: 150px;
+    width: 100%;
+    padding: 5px 0 5px 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777777;
+}
+form{
+    padding-right:5px;
+}
+input[type=submit]{
+    background-color: #4aaaa5;
+    color: #ffffff;
+    font-size: 15px;
+    width: unset;
+    padding: 10px 20px;
+    border: 1px solid #666666;
+    border-radius: 2px;
+    
 }
