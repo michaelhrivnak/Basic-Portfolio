@@ -27,28 +27,30 @@ body{
     padding: 20px 20px;
     white-space: nowrap;
 }
-#menu{ 
+ul{
     list-style-type: none;
+}
+#menu{     
     display: flex;
     margin:0;
     align-items:flex-end;
 }
-li{    
+#menu > li{    
     float:right;
     display: flex;
     margin-left: 5px;
 }
-li > a{
+#menu > li > a{
     color: #777777;
     text-decoration: none;    
     padding: 10px 20px;
     text-align: center;
 }
-li:hover{
+#menu > li:hover{
     background-color: #4aaaa5;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
-li:hover > a {
+#menu > li:hover > a {
     color: #ffffff;
 }
 .content-body{
@@ -74,7 +76,7 @@ h2{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .sticky-footer{
-    position: absolute;
+    position: fixed;
     width:100%;
     text-align:center;
     padding:10px 0;    
@@ -90,6 +92,7 @@ h2{
 .left{
     float: left;
 }
+/*contact*/
 .input{    
     margin-bottom: 10px;
 }
@@ -118,6 +121,32 @@ input[type=submit]{
     width: unset;
     padding: 10px 20px;
     border: 1px solid #666666;
-    border-radius: 2px;
+    border-radius: 2px;    
+}
+/*portfolio*/
+#portfolio-items{
+    display:flex;
+    flex-wrap: wrap;
+}
+#portfolio-items > li {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    background-color: grey;
+    margin: 0 30px 40px 0;
+}
+.portfolio-image{
+    display: flex;
+    width:100%;
+    justify-items: center;
     
+}
+.portfolio-name{
+    align-self: flex-end;
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+    padding: 15px 0;
+    margin-bottom: 15px;
+    background-color: #4aaaa5;
 }
