@@ -35,6 +35,7 @@ ul{
     margin:0;
     align-items:flex-end;
 }
+ 
 #menu > li{    
     float:right;
     display: flex;
@@ -45,6 +46,10 @@ ul{
     text-decoration: none;    
     padding: 10px 20px;
     text-align: center;
+}
+.menu-active{
+    border-bottom: 2px solid #4882B8;   
+    padding-bottom: 8px !important;
 }
 #menu > li:hover{
     background-color: #4aaaa5;
@@ -59,6 +64,7 @@ ul{
     background-color: #ffffff;
     margin-top:20px;
     border: 1px solid #dddddd;
+    margin-bottom:25px;
 }
 p{
     padding: 5px;
@@ -85,6 +91,7 @@ h2{
     background-color:#666666;
     color:#ffffff;
     top: calc(100% - 48px);
+    
 }
 .right{
     float: right;
@@ -122,6 +129,11 @@ input[type=submit]{
     padding: 10px 20px;
     border: 1px solid #666666;
     border-radius: 2px;    
+    cursor:pointer;
+}
+input[type=submit]:hover{
+    background-color: #409490;
+    border: 1px solid #777777;
 }
 /*portfolio*/
 #portfolio-items{
@@ -130,23 +142,49 @@ input[type=submit]{
 }
 #portfolio-items > li {
     display: flex;
-    width: 200px;
+    width: 266.6667px;
     height: 200px;
     background-color: grey;
-    margin: 0 30px 40px 0;
+    margin: 0 25px 40px 0;
 }
 .portfolio-image{
     display: flex;
     width:100%;
     justify-items: center;
+    border: 1px solid #666666;
     
 }
 .portfolio-name{
+    text-decoration: none;
     align-self: flex-end;
     text-align: center;
+    white-space: nowrap;
     width: 100%;
     color: #ffffff;
     padding: 15px 0;
     margin-bottom: 15px;
     background-color: #4aaaa5;
+    transition: font-size 0.25s ease-in-out;
+}
+.portfolio-name:hover{
+    font-size: 20px;
+    max-width: unset;    
+}
+#portfolio-item1{
+    background-image: url("../images/portfolio1.jfif");
+}
+
+#portfolio-item2{
+    background-image: url("../images/portfolio2.jfif");
+}
+
+#portfolio-item3{
+    background-image: url("../images/portfolio3.jfif");
+}
+
+#portfolio-item4{
+    background-image: url("../images/portfolio4.jfif");
+}
+#portfolio-item5{
+    background-image: url("../images/portfolio5.jfif");
 }
